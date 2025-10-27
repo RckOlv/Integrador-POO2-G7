@@ -20,35 +20,35 @@
 
 # 
 
-# \* \*\*RF-01: Gestión de Clientes y Cuentas\*\*
+# \- \*\*RF-01: Gestión de Clientes y Cuentas\*\*  
 
-# &nbsp;   \* El sistema debe permitir la gestión de cuentas y clientes.
+# &nbsp; - El sistema debe permitir la gestión de cuentas y clientes.  
 
-# &nbsp;   \* El sistema debe almacenar la condición fiscal (IVA) de cada cliente.
-
-# 
-
-# \* \*\*RF-02: Facturación Individual\*\*
-
-# &nbsp;   \* El sistema debe permitir a un operador generar una factura individual.
+# &nbsp; - El sistema debe almacenar la condición fiscal (IVA) de cada cliente.
 
 # 
 
-# \* \*\*RF-03: Facturación Masiva por Período\*\*
+# \- \*\*RF-02: Facturación Individual\*\*  
 
-# &nbsp;   \* El sistema debe permitir ejecutar un proceso de facturación masiva por período.
-
-# 
-
-# \* \*\*RF-04: Registro de Pagos\*\*
-
-# &nbsp;   \* El sistema debe permitir el registro de pagos.
+# &nbsp; - El sistema debe permitir a un operador generar una factura individual.
 
 # 
 
-# \* \*\*RF-05: Anulación de Facturas\*\*
+# \- \*\*RF-03: Facturación Masiva por Período\*\*  
 
-# &nbsp;   \* El sistema debe permitir la anulación de facturas.
+# &nbsp; - El sistema debe permitir ejecutar un proceso de facturación masiva por período.
+
+# 
+
+# \- \*\*RF-04: Registro de Pagos\*\*  
+
+# &nbsp; - El sistema debe permitir el registro de pagos.
+
+# 
+
+# \- \*\*RF-05: Anulación de Facturas\*\*  
+
+# &nbsp; - El sistema debe permitir la anulación de facturas.
 
 # 
 
@@ -60,19 +60,21 @@
 
 # 
 
-# \* \*\*RNF-01: Cumplimiento Legal\*\*
+# \- \*\*RNF-01: Cumplimiento Legal\*\*  
 
-# &nbsp;   \* El sistema debe operar de acuerdo con la legislación argentina vigente sobre facturación e IVA.
-
-# 
-
-# \* \*\*RNF-02: Usabilidad\*\*
-
-# &nbsp;   \* La interfaz de usuario debe ser clara e intuitiva (basado en la necesidad de wireframes y casos de uso).
+# &nbsp; - El sistema debe operar de acuerdo con la legislación argentina vigente sobre facturación e IVA.
 
 # 
 
-# \* \*\*RNF-03: Documentación\*\*
+# \- \*\*RNF-02: Usabilidad\*\*  
 
-# &nbsp;   \* El proyecto debe seguir la estructura de documentos definida en el "Proyecto Integrador".
+# &nbsp; - La interfaz de usuario debe ser clara e intuitiva (basado en la necesidad de wireframes y casos de uso).
+
+# 
+
+# \- \*\*RNF-03: Documentación\*\*  
+
+# &nbsp; - El proyecto debe seguir la estructura de documentos definida en el "Proyecto Integrador".
+
+# 
 
