@@ -1,80 +1,78 @@
-\## 1. Introducción
+# \# Especificación de Requisitos de Software (ERP)
 
+# \# Proyecto: Sistema de Facturación de Servicios
 
+# 
 
-\[cite\_start]El presente documento detalla los requisitos para el desarrollo de un sistema de facturación de servicios para una empresa\[cite: 3]. \[cite\_start]El sistema debe gestionar cuentas de clientes, manejar diferentes condiciones fiscales (IVA según legislación argentina) \[cite: 3]\[cite\_start], y permitir la facturación masiva, individual, anulación de facturas y registro de pagos\[cite: 4].
+# \## 1. Introducción
 
+# 
 
+# El presente documento detalla los requisitos para el desarrollo de un sistema de facturación de servicios para una empresa. El sistema debe gestionar cuentas de clientes, manejar diferentes condiciones fiscales (IVA según legislación argentina), y permitir la facturación masiva, individual, anulación de facturas y registro de pagos.
 
-\## 2. Requisitos Funcionales (RF)
+# 
 
+# \## 2. Requisitos Funcionales (RF)
 
+# 
 
-Los requisitos funcionales describen las capacidades específicas que el sistema debe proveer a los usuarios.
+# Los requisitos funcionales describen las capacidades específicas que el sistema debe proveer a los usuarios.
 
+# 
 
+# \* \*\*RF-01: Gestión de Clientes y Cuentas\*\*
 
-\* \*\*RF-01: Gestión de Clientes y Cuentas\*\*
+# &nbsp;   \* El sistema debe permitir la gestión de cuentas y clientes.
 
-&nbsp;   \* \[cite\_start]El sistema debe permitir dar de alta, modificar y consultar clientes\[cite: 4].
+# &nbsp;   \* El sistema debe almacenar la condición fiscal (IVA) de cada cliente.
 
-&nbsp;   \* \[cite\_start]El sistema debe almacenar la condición fiscal (IVA) de cada cliente\[cite: 3].
+# 
 
-&nbsp;   \* El sistema debe permitir asociar los servicios que consume cada cuenta de cliente.
+# \* \*\*RF-02: Facturación Individual\*\*
 
+# &nbsp;   \* El sistema debe permitir a un operador generar una factura individual.
 
+# 
 
-\* \*\*RF-02: Facturación Individual\*\*
+# \* \*\*RF-03: Facturación Masiva por Período\*\*
 
-&nbsp;   \* \[cite\_start]El sistema debe permitir a un operador generar una factura individual para un cliente específico en cualquier momento\[cite: 4].
+# &nbsp;   \* El sistema debe permitir ejecutar un proceso de facturación masiva por período.
 
+# 
 
+# \* \*\*RF-04: Registro de Pagos\*\*
 
-\* \*\*RF-03: Facturación Masiva por Período\*\*
+# &nbsp;   \* El sistema debe permitir el registro de pagos.
 
-&nbsp;   \* \[cite\_start]El sistema debe permitir ejecutar un proceso de facturación masiva por período (ej. mensual)\[cite: 4].
+# 
 
-&nbsp;   \* Este proceso debe generar las facturas correspondientes a los servicios recurrentes de todos los clientes activos.
+# \* \*\*RF-05: Anulación de Facturas\*\*
 
+# &nbsp;   \* El sistema debe permitir la anulación de facturas.
 
+# 
 
-\* \*\*RF-04: Registro de Pagos\*\*
+# \## 3. Requisitos No Funcionales (RNF)
 
-&nbsp;   \* \[cite\_start]El sistema debe permitir registrar los pagos recibidos por parte de los clientes\[cite: 4].
+# 
 
-&nbsp;   \* El sistema debe permitir asociar los pagos a las facturas pendientes correspondientes, actualizando el estado de cuenta del cliente.
+# Los requisitos no funcionales describen las características de calidad y restricciones del sistema.
 
+# 
 
+# \* \*\*RNF-01: Cumplimiento Legal\*\*
 
-\* \*\*RF-05: Anulación de Facturas\*\*
+# &nbsp;   \* El sistema debe operar de acuerdo con la legislación argentina vigente sobre facturación e IVA.
 
-&nbsp;   \* \[cite\_start]El sistema debe permitir la anulación de una factura emitida previamente\[cite: 4].
+# 
 
-&nbsp;   \* (Requisito implícito) La anulación debe generar el comprobante de ajuste correspondiente (ej. Nota de Crédito) para mantener la integridad fiscal.
+# \* \*\*RNF-02: Usabilidad\*\*
 
+# &nbsp;   \* La interfaz de usuario debe ser clara e intuitiva (basado en la necesidad de wireframes y casos de uso).
 
+# 
 
-\## 3. Requisitos No Funcionales (RNF)
+# \* \*\*RNF-03: Documentación\*\*
 
-
-
-Los requisitos no funcionales describen las características de calidad y restricciones del sistema.
-
-
-
-\* \*\*RNF-01: Cumplimiento Legal\*\*
-
-&nbsp;   \* \[cite\_start]El sistema debe operar de acuerdo con la legislación argentina vigente sobre facturación e IVA\[cite: 3].
-
-
-
-\* \*\*RNF-02: Usabilidad\*\*
-
-&nbsp;   \* La interfaz de usuario debe ser clara e intuitiva para un operador administrativo, minimizando la posibilidad de errores en la carga de datos.
-
-
-
-\* \*\*RNF-03: Documentación\*\*
-
-&nbsp;   \* \[cite\_start]El proyecto debe seguir la estructura de documentación y entregables definida en el "Proyecto Integrador" (erp.md, roadmap.md, dp-iteracion-X.md, retrospectiva-iteracion-X.md)\[cite: 6, 7, 9, 31].
+# &nbsp;   \* El proyecto debe seguir la estructura de documentos definida en el "Proyecto Integrador".
 
