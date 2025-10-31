@@ -4,8 +4,6 @@
 
 ## 1. Trabajo en equipo
 
-**(COMPLETAR POR EL EQUIPO: Describan qué trabajo ha realizado cada integrante).**
-
 | Integrante         | Tareas Asignadas (Basadas en la sección 5. Tareas) |
 |--------------------|----------------------------------------------------|
 | **Bauer Luciano**  | HU-02: Gestión de Estados de Cuenta |
