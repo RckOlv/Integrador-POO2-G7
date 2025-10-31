@@ -19,7 +19,7 @@
 
 ## 2. Diseño OO
 
-![Diagrama de CLases](../Diagrama%20de%20clase%20-%20POO%202.drawio.png)
+![Diagrama de Clases](../Diagrama%20de%20clase%20-%20POO%202.drawio.png)
 
 ## 3. Wireframe y caso de uso
 
