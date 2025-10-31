@@ -3,7 +3,7 @@
 Proyecto integrador – **Programación Orientada a Objetos II**
 
 
-## 🧩 Descripción:
+## Descripción:
 
 El proyecto consiste en crear un **sistema de facturación** para una empresa que maneja distintos clientes y condiciones fiscales (IVA).  
 Permite registrar clientes, generar facturas (individuales o masivas), anularlas y registrar pagos.  
