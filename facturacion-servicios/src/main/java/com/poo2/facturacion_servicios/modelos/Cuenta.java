@@ -1,5 +1,7 @@
 package com.poo2.facturacion_servicios.modelos;
 
+import com.poo2.facturacion_servicios.enums.EstadoCuenta;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Cuenta {
+public class Cuenta{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
