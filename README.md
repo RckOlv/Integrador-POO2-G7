@@ -26,4 +26,5 @@ La idea es automatizar la gestión de cuentas y simplificar el proceso de factur
 1. Clonar el repositorio:  
 https://github.com/RckOlv/Integrador-POO2-G7.git
 
-y listo!
+y listo! 
+Por ejemplo: git clone "https://github.com/RckOlv/Integrador-POO2-G7.git"
