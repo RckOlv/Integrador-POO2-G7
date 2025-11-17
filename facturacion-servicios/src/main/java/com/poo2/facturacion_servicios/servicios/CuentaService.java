@@ -16,7 +16,6 @@ import com.poo2.facturacion_servicios.repositorios.ServicioRepository;
 
 import jakarta.transaction.Transactional;
 
-
 @Service
 public class CuentaService {
 
@@ -36,7 +35,7 @@ public class CuentaService {
         return repo.save(cuenta);
     }
 
-    //Asignar servicio a una cuenta
+    // Asignar servicio a una cuenta
     @Transactional
     public ServicioContratado asignarServicio(Long cuentaId, Long servicioId) {
         Cuenta cuenta = repo.findById(cuentaId)
@@ -53,13 +52,13 @@ public class CuentaService {
         return servicioContratadoRepository.save(sc);
     }
 
-    //Quitar servicio de una cuenta
+    // Quitar servicio de una cuenta
     @Transactional
     public void quitarServicio(Long cuentaId, Long servicioId) {
         servicioContratadoRepository.deleteByCuentaIdAndServicioId(cuentaId, servicioId);
     }
 
-    //Listar servicios contratados de una cuenta
+    // Listar servicios contratados de una cuenta
     public List<ServicioContratado> listarServicios(Long cuentaId) {
         return servicioContratadoRepository.findByCuentaId(cuentaId);
     }
