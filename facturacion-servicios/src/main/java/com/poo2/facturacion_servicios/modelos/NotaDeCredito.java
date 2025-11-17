@@ -21,34 +21,37 @@ import lombok.Setter;
 @Entity
 @Table(name = "notas_de_credito")
 // Anotaciones de Lombok
-@Getter                 // Genera todos los getters
-@Setter                 // Genera todos los setters
-@NoArgsConstructor      // Constructor vacío para JPA
-@AllArgsConstructor     // Constructor con todos los campos
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class NotaDeCredito {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id; // Este 'id' es de la NotaDeCredito (está bien)
 
     @Column(nullable = false)
-    private BigDecimal importe; // Criterio: Mismo importe que la factura
+    private BigDecimal importe; 
 
     @Column(nullable = false)
     private LocalDate fechaEmision;
 
-    @Column(nullable = false, length = 500) // Damos espacio para el motivo
-    private String motivoAnulacion; // Criterio: Se debe pedir un motivo
+    @Column(nullable = false, length = 500) 
+    private String motivoAnulacion; 
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cliente_id", nullable = false)
-    private Cliente cliente; // Asociado al mismo cliente
+    private Cliente cliente; 
 
     // Criterio: Relación 1 a 1 con la factura que anula
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "factura_anulada_id", // Nombre de la columna FK
-                referencedColumnName = "id", // Apunta al 'id' de la Factura
-                unique = true, // Asegura que solo una NC puede anular una factura
-                nullable = false) // Una NC siempre debe tener una factura original
+                
+                
+                referencedColumnName = "idFactura", // Apunta al 'idFactura' de Factura.java
+                
+                unique = true, 
+                nullable = false) 
     private Factura facturaOriginal;
 }
