@@ -7,7 +7,7 @@ import java.util.List;
 
 import com.poo2.facturacion_servicios.enums.EstadoFactura;
 
-import jakarta.persistence.CascadeType;
+import jakarta.persistence.CascadeType; // Importa todo jakarta.persistence
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -15,11 +15,13 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 
 @Entity
 @Data
@@ -32,30 +34,38 @@ public class Factura {
     private Long idFactura;
 
     @ManyToOne
-    private Cuenta cuenta;
+    private Cuenta cuenta; 
+    
+    // --- AÑADIDO POR LA HU-07 ---
+    // Esta es la relación que faltaba y causaba los errores
+    @ManyToOne
+    @JoinColumn(name = "cliente_id")
+    private Cliente cliente;
+    // ----------------------------
 
     @Column(nullable = false)
-    private LocalDate fechaEmision;
+    private LocalDate fechaEmision; 
 
     @Column(nullable = false)
-    private String periodoFacturado;
+    private String periodoFacturado; 
 
     @Column(nullable = false, precision = 10, scale = 2)
-    private BigDecimal subTotal;
+    private BigDecimal subTotal; 
 
     @Column(nullable = false, precision = 10, scale = 2)
-    private BigDecimal totalIVA;
+    private BigDecimal totalIVA; 
 
     @Column(nullable = false, precision = 10, scale = 2)
-    private BigDecimal total;
+    private BigDecimal total; 
 
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING) 
     @Column(nullable = false)
-    private EstadoFactura estado;
+    private EstadoFactura estado; 
 
     @OneToMany(mappedBy = "factura", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ItemFactura> items = new ArrayList<>();
 
+    // Método helper
     public void addItem(ItemFactura item) {
         this.items.add(item);
         item.setFactura(this);
