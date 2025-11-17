@@ -1,5 +1,8 @@
 package com.poo2.facturacion_servicios.modelos;
 
+import java.math.BigDecimal;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,14 +20,27 @@ public class ItemFactura {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long idItemFactura; // <-- Actualizado (según diagrama)
 
+    @Column(nullable = false)
     private String descripcion;
-    private Double monto;
-    private Double iva;
+
+
+    @Column(nullable = false, precision = 10, scale = 2)
+    private BigDecimal montoItem; // <-- Actualizado (tipo y nombre)
+
+    @Column(nullable = false, precision = 10, scale = 2)
+    private BigDecimal IVACalculado; // <-- Actualizado (tipo y nombre)
 
     @ManyToOne
     private Factura factura;
 
+    // Constructor simple para la HU-06 (Individual)
+    // Nota: El 'IVACalculado' se espera que venga ya resuelto.
+    public ItemFactura(String descripcion, BigDecimal montoItem, BigDecimal IVACalculado) {
+        this.descripcion = descripcion;
+        this.montoItem = montoItem;
+        this.IVACalculado = IVACalculado;
+    }
 
 }
