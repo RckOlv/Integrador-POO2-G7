@@ -10,8 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.poo2.facturacion_servicios.controladores.dto.FacturaIndividualRequest;
-import com.poo2.facturacion_servicios.controladores.dto.ItemDTO;
+import com.poo2.facturacion_servicios.dto.FacturaIndividualRequest;
+import com.poo2.facturacion_servicios.dto.ItemDTO;
 import com.poo2.facturacion_servicios.enums.EstadoCuenta;
 import com.poo2.facturacion_servicios.enums.EstadoFactura;
 import com.poo2.facturacion_servicios.modelos.Cuenta;

@@ -1,4 +1,4 @@
-package com.poo2.facturacion_servicios.controladores.dto;
+package com.poo2.facturacion_servicios.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;

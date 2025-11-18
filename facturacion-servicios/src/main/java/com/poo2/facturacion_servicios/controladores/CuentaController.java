@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.poo2.facturacion_servicios.controladores.dto.AsignarServicioDTO;
+import com.poo2.facturacion_servicios.dto.AsignarServicioDTO;
 import com.poo2.facturacion_servicios.enums.EstadoCuenta;
 import com.poo2.facturacion_servicios.modelos.Cuenta;
 import com.poo2.facturacion_servicios.modelos.ServicioContratado;
 import com.poo2.facturacion_servicios.servicios.CuentaService;
 
 @RestController
-@RequestMapping("/cuentas")
+@RequestMapping("/api/v1/cuentas")
 public class CuentaController {
 
     private final CuentaService service;

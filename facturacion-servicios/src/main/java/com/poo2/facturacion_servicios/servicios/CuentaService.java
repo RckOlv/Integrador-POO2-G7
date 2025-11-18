@@ -55,7 +55,7 @@ public class CuentaService {
     // Quitar servicio de una cuenta
     @Transactional
     public void quitarServicio(Long cuentaId, Long servicioId) {
-        servicioContratadoRepository.deleteByCuentaIdAndServicioId(cuentaId, servicioId);
+        servicioContratadoRepository.eliminarRelacion(cuentaId, servicioId);
     }
 
     // Listar servicios contratados de una cuenta

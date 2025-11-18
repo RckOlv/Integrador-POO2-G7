@@ -1,4 +1,4 @@
-package com.poo2.facturacion_servicios.controladores.dto;
+package com.poo2.facturacion_servicios.dto;
 
 import com.poo2.facturacion_servicios.enums.CondicionIVA;
 import com.poo2.facturacion_servicios.enums.EstadoCuenta;

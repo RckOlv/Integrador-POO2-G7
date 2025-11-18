@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.poo2.facturacion_servicios.controladores.dto.ClienteDTO;
-import com.poo2.facturacion_servicios.controladores.dto.CrearClienteRequest;
+import com.poo2.facturacion_servicios.dto.ClienteDTO;
+import com.poo2.facturacion_servicios.dto.CrearClienteRequest;
 import com.poo2.facturacion_servicios.modelos.Cliente;
 import com.poo2.facturacion_servicios.servicios.ClienteService;
 

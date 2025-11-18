@@ -2,6 +2,7 @@ package com.poo2.facturacion_servicios.modelos;
 
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.poo2.facturacion_servicios.enums.CondicionIVA;
 
 import jakarta.persistence.CascadeType;
@@ -56,6 +57,7 @@ public class Cliente {
     
 
     @OneToOne(mappedBy = "cliente", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonIgnore
     private Cuenta cuenta;
 
     

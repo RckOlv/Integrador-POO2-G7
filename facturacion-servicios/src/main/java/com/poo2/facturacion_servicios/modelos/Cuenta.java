@@ -3,6 +3,7 @@ package com.poo2.facturacion_servicios.modelos;
 import java.math.BigDecimal; // <-- AÑADIDO
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.poo2.facturacion_servicios.enums.EstadoCuenta;
 
 import jakarta.persistence.Column; // <-- AÑADIDO
@@ -44,6 +45,7 @@ public class Cuenta {
 
     // Relación con ServicioContratado (uno a muchos)
     @OneToMany(mappedBy = "cuenta")
+    @JsonIgnore
     private List<ServicioContratado> serviciosContratados;
     
     // (Relación con Factura se movió a Cliente en la HU-07)
